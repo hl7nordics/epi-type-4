@@ -33,8 +33,21 @@
           <xsl:choose>
             <xsl:when test="count($frequencies) = 1">
               <tr>
-                <td>Single row: <xsl:value-of select="$frequencies"/> (<xsl:value-of select="count($frequencies)"/>)
-                  Items in group: <xsl:value-of select="count(current-group())"/></td>
+                <!-- SoC -->
+                <td>
+                  <xsl:value-of select="current-group()[1]/fhir:undesirableEffect/fhir:classification/fhir:coding[fhir:system/@value = 'http://terminology.hl7.org/CodeSystem/mdr']/fhir:display/@value"/>
+                </td>
+                <!-- Frequency -->
+                <xsl:variable name="effectsWithSocAndFrequency" select="current-group()[fhir:undesirableEffect/fhir:frequencyOfOccurrence/fhir:coding[fhir:system/@value = 'https://gravitatehealth.eu/meddra/frequency']/fhir:code/@value = $frequencies[1]]"/>
+                <td>
+                  <xsl:value-of select="$effectsWithSocAndFrequency[1]/fhir:undesirableEffect/fhir:frequencyOfOccurrence/fhir:coding[fhir:system/@value = 'https://gravitatehealth.eu/meddra/frequency']/fhir:display/@value"/>
+                </td>
+                <!-- Effects -->
+                <td>
+                  <xsl:for-each select="$effectsWithSocAndFrequency">
+                    <xsl:apply-templates select="$effectsWithSocAndFrequency" mode="section4-8"/>
+                  </xsl:for-each>
+                </td>
               </tr>
               <!-- Simple row -->
             </xsl:when>

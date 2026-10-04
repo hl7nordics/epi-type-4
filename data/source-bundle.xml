@@ -319,4 +319,51 @@
       </ClinicalUseDefinition>
     </resource>
   </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eaddc4f3-be89-47a0-9760-41ae92382678"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="eaddc4f3-be89-47a0-9760-41ae92382678"/>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+                <code value="10028411"/>
+                <display value="Myalgia"/>
+              </coding>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+                <code value="100000018852"/>
+                <display value="Myalgia"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+              <code value="10028395"/>
+              <display value="Musculoskeletal and connective tissue disorders"/>
+            </coding>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+              <code value="100000004859"/>
+              <display value="Musculoskeletal and connective tissue disorders"/>
+            </coding>
+          </classification>
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="https://gravitatehealth.eu/meddra/frequency"/>
+              <code value="002"/>
+              <display value="Common"/>
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
 </Bundle>

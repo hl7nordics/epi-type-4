@@ -15,7 +15,7 @@ Sequence;RMS;MedDRA;Term
 020;Gastrointestinal disorders 
 021;Hepatobiliary disorders 
 022;Skin and subcutaneous tissue disorders 
-023;Musculoskeletal and connective tissue disorders 
+023;100000004859;10028395;Musculoskeletal and connective tissue disorders 
 024;Renal and urinary disorders 
 025;Pregnancy, puerperium and perinatal conditions 
 026;Reproductive system and breast disorders 
