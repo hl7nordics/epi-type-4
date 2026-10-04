@@ -9,4 +9,6 @@
 
   <xsl:mode on-no-match="shallow-copy"/>
 
+  <xsl:include href="render/id-refs.xsl"/>
+
 </xsl:stylesheet>

@@ -104,11 +104,15 @@
       </xsl:when>
       <!-- Second priority is the text of the CodeableConcept -->
       <xsl:when test="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:text">
-        <xsl:value-of select="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:text/@value"/>
+        <span xmlns="http://www.w3.org/1999/xhtml" class="id-ref-{fhir:id/@value}">
+          <xsl:value-of select="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:text/@value"/>
+        </span>
       </xsl:when>
       <!-- Third priority is the display of the first coding -->
       <xsl:when test="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:coding/fhir:display">
-        <xsl:value-of select="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:coding[1]/fhir:display/@value"/>
+        <span xmlns="http://www.w3.org/1999/xhtml" class="id-ref-{fhir:id/@value}">
+          <xsl:value-of select="fhir:undesirableEffect/fhir:symptomConditionEffect/fhir:concept/fhir:coding[1]/fhir:display/@value"/>
+        </span>
       </xsl:when>
     </xsl:choose>
   </xsl:template>
