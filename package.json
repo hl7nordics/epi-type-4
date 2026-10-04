@@ -1,0 +1,10 @@
+{
+  "name": "vulcan-epi-type-4-demo",
+  "private": true,
+  "scripts": {
+    "build": "xslt3 -xsl:xslt/generate.xsl -export:xslt/generate.sef.json -nogo -t -relocate:on && xslt3 -xsl:xslt/render.xsl -export:xslt/render.sef.json -nogo -t -relocate:on"
+  },
+  "devDependencies": {
+    "xslt3": "2.7.0"
+  }
+}

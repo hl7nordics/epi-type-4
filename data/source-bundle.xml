@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="epi-demo-source"/>
+  <type value="document"/>
+  <entry>
+    <fullUrl value="urn:uuid:276f2402-7557-46e9-bc4a-d7584e6abed5"/>
+    <resource>
+      <Composition>
+        <id value="276f2402-7557-46e9-bc4a-d7584e6abed5"/>
+        <status value="preliminary"/>
+        <type>
+          <coding>
+            <system value="https://spor.ema.europa.eu/v1/lists/100000155531/terms/"/>
+            <code value="100000155532"/>
+            <display value="Summary of Product Characteristics"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <date value="2026-02-26"/>
+        <title value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+        <author>
+          <display value="DemoPharm Corp."/>
+        </author>
+        <section>
+          <title value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+          <code>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/"/>
+              <code value="200000029791"/>
+              <display value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+            </coding>
+          </code>
+          <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <h1>SUMMARY OF PRODUCT CHARACTERISTICS</h1>
+            </div>
+          </text>
+          <section>
+            <title value="1. NAME OF THE MEDICINAL PRODUCT"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/"/>
+                <code value="200000029792"/>
+                <display value="1. NAME OF THE MEDICINAL PRODUCT"/>
+              </coding>
+            </code>
+            <text>
+              <status value="additional"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <h2>1. NAME OF THE MEDICINAL PRODUCT</h2>
+                <p>Demoxetine 200 mg tablet</p>
+              </div>
+            </text>
+          </section>
+          <section>
+            <title value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/"/>
+                <code value="200000029793"/>
+                <display value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+              </coding>
+            </code>
+            <text>
+              <status value="generated"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <h2>2. QUALITATIVE AND QUANTITATIVE COMPOSITION</h2>
+              </div>
+            </text>
+          </section>
+          <section>
+            <title value="4. CLINICAL PARTICULARS"/>
+            <code>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/"/>
+                <code value="200000029798"/>
+                <display value="4. CLINICAL PARTICULARS"/>
+              </coding>
+            </code>
+            <text>
+              <status value="additional"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <h2>4. CLINICAL PARTICULARS</h2>
+              </div>
+            </text>
+            <section>
+              <title value="4.8 Undesirable effects"/>
+              <code>
+                <coding>
+                  <system value="https://spor.ema.europa.eu/v1/lists/200000029659/terms/"/>
+                  <code value="200000029816"/>
+                  <display value="4.8 Undesirable effects"/>
+                </coding>
+              </code>
+              <text>
+                <status value="additional"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <h3>4.8 Undesirable effects</h3>
+                  <div class="template-text side-effect-frequency-codes">
+                    <p>Adverse reactions frequency is specified as follows:</p>
+                    <ul>
+                      <li>Very common (≥ 1/10)</li>
+                      <li>Common (≥1/100 to &lt;1/10)</li>
+                      <li>Uncommon (≥1/1,000 to &lt;1/100)</li>
+                      <li>Rare (≥1/10,000 to &lt;1/1,000)</li>
+                      <li>Very rare (&lt;1/10,000)</li>
+                      <li>Not known (cannot be estimated from the available data)</li>
+                    </ul>
+                  </div>
+                  <div class="placeholder-element" id="undesirable-effects-table">
+                  </div>
+                </div>
+              </text>
+            </section>
+          </section>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1821348f-04f6-47e2-b507-e036962e2759"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="1821348f-04f6-47e2-b507-e036962e2759"/>
+        <name>
+          <productName value="Demoxetine 200 mg tablet"/>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:d170fafa-2f3d-4a88-9db0-8c65a9bcea80"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="d170fafa-2f3d-4a88-9db0-8c65a9bcea80"/>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+                <code value="10011781"/>
+                <display value="Cystitis"/>
+              </coding>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+                <code value="100000017441"/>
+                <display value="Cystitis"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+              <code value="10021881"/>
+              <display value="Infections and infestations"/>
+            </coding>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+              <code value="100000004862"/>
+              <display value="Infections and infestations"/>
+            </coding>
+          </classification>
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="https://gravitatehealth.eu/meddra/frequency"/>
+              <code value="003"/>
+              <display value="Uncommon"/>
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:35640fb1-9e87-49ca-8bbe-a16b07bd79f8"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="35640fb1-9e87-49ca-8bbe-a16b07bd79f8"/>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+                <code value="10028810"/>
+                <display value="Nasopharyngitis"/>
+              </coding>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+                <code value="100000015697"/>
+                <display value="Nasopharyngitis"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+              <code value="10021881"/>
+              <display value="Infections and infestations"/>
+            </coding>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+              <code value="100000004862"/>
+              <display value="Infections and infestations"/>
+            </coding>
+          </classification>
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="https://gravitatehealth.eu/meddra/frequency"/>
+              <code value="002"/>
+              <display value="Common"/>
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2cc0b7e1-c607-4df1-a108-739cb531f20c"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="2cc0b7e1-c607-4df1-a108-739cb531f20c"/>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+                <code value="10019211"/>
+                <display value="Headache"/>
+              </coding>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+                <code value="100000013914"/>
+                <display value="Headache"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+              <code value="10029205"/>
+              <display value="Nervous system disorders"/>
+            </coding>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+              <code value="100000004852"/>
+              <display value="Nervous system disorders"/>
+            </coding>
+          </classification>
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="https://gravitatehealth.eu/meddra/frequency"/>
+              <code value="001"/>
+              <display value="Very common"/>
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:139ffced-c397-4b95-a21e-82c2f41dbc50"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="139ffced-c397-4b95-a21e-82c2f41dbc50"/>
+        <type value="undesirable-effect"/>
+        <subject>
+          <reference value="MedicinalProductDefinition/1821348f-04f6-47e2-b507-e036962e2759"/>
+        </subject>
+        <undesirableEffect>
+          <symptomConditionEffect>
+            <concept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+                <code value="10013573"/>
+                <display value="Dizziness"/>
+              </coding>
+              <coding>
+                <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+                <code value="100000011562"/>
+                <display value="Dizziness"/>
+              </coding>
+            </concept>
+          </symptomConditionEffect>
+          <classification>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/mdr"/>
+              <code value="10029205"/>
+              <display value="Nervous system disorders"/>
+            </coding>
+            <coding>
+              <system value="https://spor.ema.europa.eu/v1/lists/100000000006/terms/"/>
+              <code value="100000004852"/>
+              <display value="Nervous system disorders"/>
+            </coding>
+          </classification>
+          <frequencyOfOccurrence>
+            <coding>
+              <system value="https://gravitatehealth.eu/meddra/frequency"/>
+              <code value="002"/>
+              <display value="Common"/>
+            </coding>
+          </frequencyOfOccurrence>
+        </undesirableEffect>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+</Bundle>
