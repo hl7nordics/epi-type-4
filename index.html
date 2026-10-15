@@ -26,6 +26,16 @@
     <button id="render" class="btn btn-primary" type="button">Render</button>
   </div>
   <div id="error" class="alert alert-danger d-none" role="alert" style="white-space: pre-wrap"></div>
+  <details class="mb-3">
+    <summary>Content generation</summary>
+    <p class="mt-2 mb-0">This is a summary of transformations in content generation and rendering. For more details see the README file and <a href="https://github.com/hl7nordics/epi-type-4">GitHub</a>.</p>
+    <p class="mt-2 mb-0">Section 4.8:</p>
+    <ul>
+      <li>The side effect table is generated from ClinicalUseDefinition resources.
+        The placeholder element <code>&lt;div class="placeholder-element" id="undesirable-effects-table"&gt;</code>
+        is replaced with the table generated from the structured data in the ClinicalUseDefinition resources.</li>
+    </ul>
+  </details>
   <h2 class="h6">Rendered output</h2>
   <div id="rendered" class="border rounded p-3 bg-white"></div>
 </main>

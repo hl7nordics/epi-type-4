@@ -8,6 +8,8 @@ Static demo page: edit a FHIR document Bundle (left), **Generate** the target Bu
 - `xslt/*.sef.json` – compiled stylesheets (generated, committed so the page works without a build)
 - `js/app.js`, `index.html` – UI (Bootstrap, CodeMirror 5 from jsDelivr CDN; the Saxon-JS runtime is vendored in `vendor/` because the npm package ships only the Node build — see `vendor/SAXON-JS-LICENSE.txt`)
 
+The latest version from the main branch is published on <https://hl7nordics.github.io/epi-type-4/>.
+
 ## XSLT 2.0/3.0
 
 Browsers only support XSLT 1.0 natively, so the transformations run in [Saxon-JS](https://www.saxonica.com/saxon-js/) instead. Saxon-JS executes stylesheets compiled to its SEF format. After editing an `.xsl` file, recompile (Node.js required):
