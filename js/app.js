@@ -1,4 +1,4 @@
-const SOURCE_URL = "data/source-bundle.xml";
+const SOURCE_LIST_URL = "data/source-bundles.json";
 // Compiled from xslt/*.xsl with `npm run build`
 const GENERATE_SEF = "xslt/generate.sef.json";
 const RENDER_SEF = "xslt/render.sef.json";
@@ -8,6 +8,8 @@ const mkEditor = (id) =>
   CodeMirror.fromTextArea($(id), { mode: "application/xml", lineNumbers: true, lineWrapping: false });
 const left = mkEditor("left-xml");
 const right = mkEditor("right-xml");
+const sourceSelect = $("source-select");
+let activeSource = "";
 
 function showError(msg) {
   const el = $("error");
@@ -19,6 +21,40 @@ async function fetchText(url) {
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load ${url}: HTTP ${res.status}`);
   return res.text();
+}
+
+async function loadSource(filename) {
+  const xml = await fetchText(`data/${encodeURIComponent(filename)}`);
+  left.setValue(xml);
+  activeSource = filename;
+}
+
+async function loadSources() {
+  const sourceListText = await fetchText(SOURCE_LIST_URL);
+  let sources;
+  try {
+    sources = JSON.parse(sourceListText);
+  } catch (e) {
+    throw new Error(`Failed to parse ${SOURCE_LIST_URL}: ${e.message}`);
+  }
+  if (!sources || typeof sources !== "object" || Array.isArray(sources)) {
+    throw new Error(`${SOURCE_LIST_URL} must contain an object mapping XML filenames to titles`);
+  }
+
+  const entries = Object.entries(sources);
+  if (!entries.length || entries.some(([filename, title]) =>
+    !/^[^/\\]+\.xml$/i.test(filename) || typeof title !== "string" || !title.trim()
+  )) {
+    throw new Error(`${SOURCE_LIST_URL} must map XML filenames to non-empty titles`);
+  }
+
+  sourceSelect.replaceChildren(...entries.map(([filename, title]) => {
+    const option = document.createElement("option");
+    option.value = filename;
+    option.textContent = title;
+    return option;
+  }));
+  await loadSource(entries[0][0]);
 }
 
 function parseXml(text, label) {
@@ -68,8 +104,17 @@ function guard(fn) {
 
 $("generate").addEventListener("click", guard(generate));
 $("render").addEventListener("click", guard(render));
+sourceSelect.addEventListener("change", guard(async () => {
+  const previousSource = activeSource;
+  try {
+    await loadSource(sourceSelect.value);
+  } catch (e) {
+    sourceSelect.value = previousSource;
+    throw e;
+  }
+}));
 
-guard(async () => left.setValue(await fetchText(SOURCE_URL)))().then(() => {
+guard(loadSources)().catch(() => {
   if (location.protocol === "file:") {
     showError("Loading files via file:// is blocked by the browser. Serve the folder over HTTP (see README).");
   }

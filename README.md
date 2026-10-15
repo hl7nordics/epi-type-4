@@ -2,7 +2,7 @@
 
 Static demo page: edit a FHIR document Bundle (left), **Generate** the target Bundle (right) via XSLT, and **Render** it to HTML below.
 
-- `data/source-bundle.xml` – left-side bundle; edit this file to change the starting content
+- `data/` – source FHIR bundles; the UI lists bundles in `data/source-bundles.json`
 - `xslt/generate.xsl` – left → right bundle transformation (XSLT 3.0 / 2.0 features)
 - `xslt/render.xsl` – right bundle → HTML
 - `xslt/*.sef.json` – compiled stylesheets (generated, committed so the page works without a build)
@@ -32,6 +32,10 @@ npx serve .
 ```
 
 An internet connection is needed for the CDN assets.
+
+To add or remove a source bundle, add or remove its XML file in `data/` and update
+`data/source-bundles.json`. This JSON object maps each XML filename to the title
+shown in the source bundle dropdown.
 
 ## GitHub Pages
 
