@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="3cbce242-77dd-48fd-afcf-c46c513fc918"/>
+    <identifier>
+        <system value="https://github.com/hl7nordics/epi-type-4"/>
+        <value value="medikament-en-type-1"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2026-10-24T01:01:01Z"/>
+    <entry>
+        <fullUrl value="urn:uuid:bb692e87-139d-4b92-b26b-3ac8bd666934"/>
+        <resource>
+            <Composition>
+                <id value="bb692e87-139d-4b92-b26b-3ac8bd666934"/>
+                <meta>
+                    <profile value="http://ema.europa.eu/fhir/StructureDefinition/EUEpiCompositionSmPC"/>
+                    <profile value="http://ema.europa.eu/fhir/StructureDefinition/EUEpiCompositionCAP"/>
+                    <profile value="http://ema.europa.eu/fhir/StructureDefinition/EUQRD-CAP-template-new-SmPC-en"/>
+                    <profile value="http://ema.europa.eu/fhir/StructureDefinition/EUEpiComposition"/>
+                </meta>
+                <language value="en"/>
+                <extension url="http://ema.europa.eu/fhir/StructureDefinition/ext-epi-qrdtemplate-version">
+                    <valueString value="10.4"/>
+                </extension>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://ema.europa.eu/fhir/CodeSystem/100000155531"/>
+                        <code value="100000155532"/>
+                    </coding>
+                </type>
+                <date value="2026-10-24"/>
+                <author>
+                    <display value="LV Pharma"/>
+                </author>
+                <title value="Medikament 25 mg prolonged-release tablet; Medikament 100 mg prolonged-release tablet"/>
+                <section>
+                    <title value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+                    <code>
+                        <coding>
+                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                            <code value="200000029791"/>
+                            <display value="SUMMARY OF PRODUCT CHARACTERISTICS"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="additional"/>
+                        <div xmlns="http://www.w3.org/1999/xhtml">
+                            <h1>SUMMARY OF PRODUCT CHARACTERISTICS</h1>
+                        </div>
+                    </text>
+                    <section>
+                        <title value="1. NAME OF THE MEDICINAL PRODUCT"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029792"/>
+                                <display value="1. NAME OF THE MEDICINAL PRODUCT"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>1. NAME OF THE MEDICINAL PRODUCT</h2>
+                                <p>Medikament 25 mg prolonged-release tablet</p>
+                                <p>Medikament 100 mg prolonged-release tablet</p>
+                            </div>
+                        </text>
+                    </section>
+                    <section>
+                        <title value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029793"/>
+                                <display value="2. QUALITATIVE AND QUANTITATIVE COMPOSITION"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>2. QUALITATIVE AND QUANTITATIVE COMPOSITION</h2>
+                                <p>Each prolonged-release tablet contains 23.75 mg metoprolol succinate, corresponding to 25 mg metoprolol tartrate.</p>
+                                <p>Each prolonged-release tablet contains 95 mg metoprolol succinate, corresponding to 100 mg metoprolol tartrate.</p>
+                                <div>
+                                </div>
+                            </div>
+                        </text>
+                        <section>
+                            <title value="Excipient with known effect: sucrose."/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029796"/>
+                                    <display value="Excipient(s) with known effect"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>Excipient with known effect: sucrose.</h3>
+                                    <p>One 25 mg prolonged-release tablet contains the maximum of 1.84 mg sucrose.</p>
+                                    <p>One 100 mg prolonged-release tablet contains the maximum of 7.36 mg sucrose.</p>
+                                    <p>For the full list of excipients, see section 6.1.</p>
+                                </div>
+                            </text>
+                        </section>
+                    </section>
+                    <section>
+                        <title value="3. PHARMACEUTICAL FORM"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029797"/>
+                                <display value="3. PHARMACEUTICAL FORM"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>3. PHARMACEUTICAL FORM</h2>
+                                <p>Prolonged-release tablet</p>
+                                <div>
+                                    <p class="title-i">Medikament 25 mg prolonged-release tablet </p>
+                                    <p>White, oblong, biconvex tablet with a break line on both sides (dimension: 9 x 4 mm).</p>
+                                </div>
+                                <div class="title-i">
+                                    <p>Medikament 100 mg prolonged-release tablet</p>
+                                    <p>Yellow, oblong, biconvex tablet with a break line on both sides (dimension: 15 x 7 mm).</p>
+                                </div>
+                                <p>The tablet can be divided into equal doses.</p>
+                            </div>
+                        </text>
+                    </section>
+                    <section>
+                        <title value="4. CLINICAL PARTICULARS"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029798"/>
+                                <display value="4. CLINICAL PARTICULARS"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>4. CLINICAL PARTICULARS</h2>
+                            </div>
+                        </text>
+                        <section>
+                            <title value="4.1 Therapeutic indications"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029799"/>
+                                    <display value="4.1 Therapeutic indications"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.1 Therapeutic indications</h3>
+                                    <div>
+                                        <p class="title-u">Adults</p>
+                                        <ul>
+                                            <li>Stable, chronic symptomatic heart failure with reduced systolic left ventricular function.</li>
+                                            <li>Hypertension</li>
+                                            <li>Angina pectoris</li>
+                                            <li>Palpitations in the absence of organic heart disease.</li>
+                                            <li>Prophylactic treatment of migraine.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="title-u">Children and adolescents 6-18 years of age</p>
+                                        <p>Treatment of hypertension.</p>
+                                    </div>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="4.2 Posology and method of administration"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029800"/>
+                                    <display value="4.2 Posology and method of administration"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.2 Posology and method of administration</h3>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Posology"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029801"/>
+                                        <display value="Posology"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Posology</h4>
+                                        <p>The dosage should be tailored to the individual and adjusted so that bradycardia is avoided. The following guidelines apply:</p>
+                                    </div>
+                                </text>
+                                <section>
+                                    <title value="Adults"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000044347"/>
+                                            <display value="Level=H5 SmPC custom subsection"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Adults</h5>
+                                            <div>
+                                                <h6>Add-on therapy to ACE-inhibitors, diuretics and possibly digitalis in symptomatic, stable heart failure</h6>
+                                                <p>The patients should have stable, chronic heart failure, without acute failure during the past 6 weeks and an essentially unchanged primary therapy over the past two weeks.</p>
+                                                <p>Treatment of heart failure with beta-blockers may sometimes cause a <em>temporary</em> worsening of the symptoms. In a number of cases it is possible to continue the treatment or reduce the dose, and in other cases it may be necessary to discontinue the treatment. Initial treatment with Medikament in patients with severe heart failure (NYHA IV) should only be initiated by a doctor with specific expertise in the treatment of heart failure (see section 4.4).</p>
+                                            </div>
+                                            <div>
+                                                <h6>Dosage in patients with stable heart failure in function class II</h6>
+                                                <p>The recommended starting dose for the first two weeks is 25 mg once daily. After two weeks the dose may be increased to 50 mg once daily and thereafter may be doubled on alternate weeks. The target dose for long-term treatment is 200 mg once daily.</p>
+                                            </div>
+                                            <div>
+                                                <h6>Dosage in patients with stable heart failure in function class III-IV</h6>
+                                                <p>The recommended starting dose is 12.5 mg (half a 25 mg tablet) given once daily. The dose should be tailored to the individual and the patient followed-up carefully during upward dose titration as increasing symptoms of heart failure may occur in some patients. After 1-2 weeks the dose may be increased to 25 mg given once daily. After a further two weeks the dose may then be increased to 50 mg given once daily. In the event of hypotension and/or bradycardia it may be necessary to reduce the dose of other medication or the dose of Medikament. Initial hypotension need not mean that the dose of Medikament cannot be tolerated in chronic treatment, but upward titration of the dose should not take place until the condition has stabilized, and strict monitoring of renal function may be indicated.</p>
+                                            </div>
+                                            <div>
+                                                <h6>Hypertension</h6>
+                                                <p>50-100 mg once daily. If the desired effect is not achieved with 100 mg, the dose may be combined with other antihypertensive agents, primarily diuretics and dihydropyridine type calcium antagonists, or the dose increased.</p>
+                                            </div>
+                                            <div>
+                                                <h6>Angina pectoris</h6>
+                                                <p>100-200 mg once daily. If required the dose may be combined with nitrates or increased.</p>
+                                            </div>
+                                            <div>
+                                                <h6>Palpitations with no organic cause</h6>
+                                                <p>100 mg once daily. The dose may be increased as indicated.</p>
+                                            </div>
+                                            <div>
+                                                <h6>Migraine prophylactic</h6>
+                                                <p>100-200 mg once daily.</p>
+                                            </div>
+                                        </div>
+                                    </text>
+                                </section>
+                                <section>
+                                    <title value="Renal impairment"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000044347"/>
+                                            <display value="Level=H5 SmPC custom subsection"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Renal impairment</h5>
+                                            <p>The elimination rate is only slightly influenced by renal function and dose adjustment is therefore not indicated in renal impairment.</p>
+                                        </div>
+                                    </text>
+                                </section>
+                                <section>
+                                    <title value="Hepatic impairment"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000044347"/>
+                                            <display value="Level=H5 SmPC custom subsection"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Hepatic impairment</h5>
+                                            <p>Metoprolol may normally be given in the same dose to patients with liver cirrhosis as to patients with normal liver function. A reduction in dose should only be considered in the presence of signs of severely impaired hepatic function (e.g. shunt-operated patients).</p>
+                                        </div>
+                                    </text>
+                                </section>
+                                <section>
+                                    <title value="Elderly"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000044347"/>
+                                            <display value="Level=H5 SmPC custom subsection"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Elderly</h5>
+                                            <p>No dose adjustment required.</p>
+                                        </div>
+                                    </text>
+                                </section>
+                                <section>
+                                    <title value="Paediatric population"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000029802"/>
+                                            <display value="Paediatric population"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Paediatric population</h5>
+                                            <p>The recommended initial dosage in hypertensive patients ≥6 years is 0.5 mg/kg Medikament (0,48 mg/kg metoprolol succinate) once daily. The final dose administered in milligrams should be the closest approximation of the calculated dose in mg/kg. In patients not responding to 0.5 mg/kg, the dose can be increased to 1.0 mg/kg  (0,95 mg/kg metoprolol succinate), not exceeding 50 mg (47,5 metoprolol succinate). In patients not responding to 1.0 mg/kg, the dose can be increased to a maximum daily dose of 2.0 mg/kg (1.9 mg/kg metoprolol succinate). Doses above 200 mg (190 mg metoprolol succinate) once daily have not been studied in children and adolescents. Efficacy and safety of use in children &lt; 6 years have not been studied. Therefore, Medikament is not recommended in this age group.</p>
+                                        </div>
+                                    </text>
+                                </section>
+                            </section>
+                            <section>
+                                <title value="Method of administration"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029803"/>
+                                        <display value="Method of administration"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Method of administration</h4>
+                                        <p>Medikament prolonged-release tablets should be given once daily, preferably in the morning.</p>
+                                        <p>The prolonged-release tablets are divisible. The tablets should not be chewed or crushed. The tablets should be swallowed with at least half a glass of liquid. Concomitant intake of food does not affect bioavailability.</p>
+                                    </div>
+                                </text>
+                            </section>
+                        </section>
+                        <section>
+                            <title value="4.3 Contraindications"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029805"/>
+                                    <display value="4.3 Contraindications"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>Contraindications</h3>
+                                    <ul>
+                                        <li>Hypersensitivity to the active substance, other beta-receptor blockers or to any of the excipients listed in section 6.1</li>
+                                        <li>Cardiogenic shock</li>
+                                        <li>Second- and third degree AV-block </li>
+                                        <li>Patients with unstable, uncompensated heart failure (pulmonary oedema, hypoperfusion or hypotension), and patients undergoing continuous or intermittent inotrope therapy with beta-receptor agonism.</li>
+                                        <li>Symptomatic bradycardia or hypotension. </li>
+                                    </ul>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="4.4 Special warnings and precautions for use"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029806"/>
+                                    <display value="4.4 Special warnings and precautions for use"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.4 Special warnings and precautions for use</h3>
+                                    <p>Verapamil should not be administered to patients undergoing treatment with beta blockers, see section 4.5.</p>
+                                    <p>Metoprolol can exacerbate symptoms of peripheral vascular disease, e.g. intermittent claudication. Severe renal impairment. Severe, acute illness involving metabolic acidosis. Combination treatment with digitalis.</p>
+                                    <p>In patients with Prinzmetal’s angina, the number and duration of angina attacks may increase due to alpha-receptor mediated vasoconstriction. Consequently, non-selective beta-blockers should not be used for these patients. Beta 1-selective receptor blockers should be used with caution.<br/>Adequate bronchodilator therapy should be administered concomitantly in the presence of bronchial asthma or other chronic obstructive airways disease. If necessary the dose of beta-2-stimulator may need to be increased.</p>
+                                    <p>Treatment with Medikament may affect carbohydrate metabolism or mask hypoglycaemia, but the risk is less than with non-selective beta-receptor blockers.<br/>Beta-blockers could further increase the risk of severe hypoglycaemia when used concurrently with sulfonylureas. Diabetic patients should be advised to carefully monitor blood glucose levels (see section 4.5).</p>
+                                    <p>Treatment with beta-blockers may render treatment of an anaphylactic reaction more difficult. Treatment with adrenaline at the normal dose not always produce the anticipated therapeutic effect. Where Medikament is administered to a patient with phaeochromocytoma, treatment with alpha-blockers should be considered. </p>
+                                    <p>Efficacy/safety data from controlled clinical trials in patients with severe, stable, symptomatic heart failure (NYHA class IV) is limited. Initiation of treatment of heart failure in these patients should, therefore, only be managed by a physician with special experience and expertise within this field (see section 4.2).</p>
+                                    <p>Patients with symptomatic heart failure associated with acute myocardial infarction and unstable angina pectoris are excluded from the study, which forms the basis of the indication myocardial infarction. Consequently, efficacy/safety in respect of treatment of acute heart failure in connection with these conditions has not been documented. Use in unstable uncompensated heart failure is contraindicated (see section 4.3).</p>
+                                    <p>Rapid withdrawal of beta blockade, especially in high risk patients, can be hazardous, and can worsen chronic heart failure and increase the risk of myocardial infarction and sudden death. Therefore, any discontinuation of Medikament should, where possible, occur gradually over at least two weeks, whereby the dose is halved step-by-step, until the end dose, where one 25 mg tablet is reduced to half a tablet. The end dose should be administered for at least four days before discontinuing entirely. If symptoms arise a slower withdrawal is recommended.</p>
+                                    <p>Patients with rare hereditary problems of fructose intolerance, glucose galactose malabsorption or sucrase isomaltase insufficiency should not take this medicine.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029809"/>
+                                    <display value="4.5 Interaction with other medicinal products and other forms of interaction"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.5 Interaction with other medicinal products and other forms of interaction</h3>
+                                    <p>Metoprolol is a CYP2D6-substrate. Drugs which inhibit CYP2D6 can affect the plasma concentration of metoprolol. Examples of inhibitors of CYP2D6 are quinidine, terbinafine, paroxetine, fluoxetine, sertraline, celecoxib, propafenon and diphenhydramine. On commencement of treatment with these medicinal products in patients being treated with Medikament the dose of Medikament may need to be reduced.</p>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Combinations with Medikament that should be avoided"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000044333"/>
+                                        <display value="Level=H4 SmPC custom subsection"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Combinations with Medikament that should be avoided</h4>
+                                        <div>
+                                            <p class="title-i">Propafenon</p>
+                                            <p>When propafenon was commenced in four patients, who were then treated with metoprolol, the plasma concentrations of metoprolol increased 2-5-fold and two patients suffered typical metoprolol side effects. The interaction was confirmed in a study involving eight healthy research subjects. The interaction is probably due to the fact that propafenon, like quinidine, inhibits the metabolism of metoprolol via cytochrome P450 2D6. The combination is probably difficult to manage due to the fact that profanenon also has beta-receptor blocking properties.</p>
+                                        </div>
+                                        <div>
+                                            <p class="title-i">Verapamil</p>
+                                            <p>In combination with beta-receptor blockers (here described for atenolol, propanolol and pindolol), verapamil may give rise to bradycardia and hypotension. Verapamil and beta-receptor blockers have additive inhibiting effects on AV-conduction and sinus node function.</p>
+                                        </div>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Combinations with Medikament that may require dose adjustment"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000044333"/>
+                                        <display value="Level=H4 SmPC custom subsection"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Combinations with Medikament that may require dose adjustment</h4>
+                                        <div>
+                                            <p class="title-i">Amiodarone</p>
+                                            <p>One case history indicates that patients treated with amiodarone can develop severe sinus bradycardia during concomitant treatment with metoprolol. Amiodarone has an extremely long half-life (approximately 50 days), which means that interactions can occur a long time after discontinuation of the preparation.</p>
+                                        </div>
+                                        <div>
+                                            <p class="title-i">Class I-antiarrhythmics</p>
+                                            <p>Class I-antiarrhythmics and beta-receptor blockers have additive negative inotropic effects, which can result in serious haemodynamic adverse reactions in patients with impaired left-ventricular function. The combination should be avoided in “sick sinus syndrome” and pathological AV-conduction. The interaction is best documented for disopyramide.</p>
+                                        </div>
+                                        <div>
+                                            <p class="title-i">Non-steroidal anti-inflammatory drugs/antirheumatic agents (NSAID)</p>
+                                            <p>NSAID-type antiphlogistics counteract the antihypertensive effect of beta-receptor blocking agents. Studies have primarily been performed on indomethacin. This interaction is not believed to occur with sulindac. It has not been possible to demonstrate such an interaction in a study relating to diclofenac.</p>
+                                        </div>
+                                        <div>
+                                            <p class="title-i">Digitalis glycosides</p>
+                                            <p>Digitalis glycosides in connection with beta-receptor blockers, can increase the atrioventricular conduction time and induce bradycardia.</p>
+                                        </div>
+                                        <div>
+                                            <p class="title-i">Epinephrine</p>
+                                            <p>A dozen reports exist in respect of severe hypertension and bradycardia in patients treated with non-selective beta-receptor blockers (including pindolol and propranolol), who were administered epinephrine (adrenaline). These clinical observations have been confirmed in studies on healthy research subjects. It has also been suggested that epinephrine, administered as local anaesthesia, may give rise to these reactions on intravasal administration. The risk should be considerably less with cardioselective beta-receptor blockers.</p>
+                                        </div>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Other potential interactions"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000044333"/>
+                                        <display value="Level=H4 SmPC custom subsection"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Other potential interactions</h4>
+                                        <p>Patients concomitantly treated with metoprolol and other beta-receptor blockers (e.g. eye drops) or MAO-inhibitors, should be observed carefully.</p>
+                                        <p>The dose of oral antidiabetics may require adjustment in patients receiving treatment with beta-blockers.</p>
+                                        <p>The concomitant use of beta-blockers with sulfonylureas could increase the risk of severe hypoglycaemia (see Section 4.4).</p>
+                                    </div>
+                                </text>
+                            </section>
+                        </section>
+                        <section>
+                            <title value="4.6 Fertility, pregnancy and lactation"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029811"/>
+                                    <display value="4.6 Fertility, pregnancy and lactation"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.6 Fertility, pregnancy and lactation</h3>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Pregnancy"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029812"/>
+                                        <display value="Pregnancy"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Pregnancy</h4>
+                                        <p>Medikament should only be administered during pregnancy where absolutely necessary. In general, beta-receptor blockers reduce placental perfusion, which is associated with growth retardation, intrauterine death, miscarriage, and premature birth. Therefore, appropriate monitoring of pregnant women treated with metoprolol and their fetuses is recommended. Beta-receptor blockers may give rise to bradycardia in the foetus and the newborn. Consequently these preparations should be prescribed with consideration of the above during the third trimester of pregnancy and in connection with labour. Medikament should be discontinued gradually, 48-72 hours before anticipated labour. If this is not possible, the newborn infant should be monitored for 48-72 hours post partum for signs and symptoms of beta blockade (e.g. heart and lung complications).</p>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Breast-feeding"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029813"/>
+                                        <display value="Breast-feeding"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Breast-feeding</h4>
+                                        <p>Metoprolol is concentrated in breast milk in a quantity which approximately corresponds to three times the amount found in the mother’s plasma. The risk of harmful reactions to the nursing infant appears to be low with ingestion of therapeutic doses of the drug. The nursing infant should, however, be observed for signs of beta blockade.</p>
+                                    </div>
+                                </text>
+                            </section>
+                            <section>
+                                <title value="Fertility"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029814"/>
+                                        <display value="Fertility"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Fertility</h4>
+                                        <p>Medikament has no effect on fertility.</p>
+                                    </div>
+                                </text>
+                            </section>
+                        </section>
+                        <section>
+                            <title value="4.7 Effects on ability to drive and use machines"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029815"/>
+                                    <display value="4.7 Effects on ability to drive and use machines"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.7 Effects on ability to drive and use machines</h3>
+                                    <p>As dizziness and tiredness can occur during treatment with Medikament, this should be taken into consideration during tasks requiring close concentration, e.g. when driving or using machines.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="4.8 Undesirable effects"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029816"/>
+                                    <display value="4.8 Undesirable effects"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.8 Undesirable effects</h3>
+                                    <div>
+                                        <p>Adverse reactions occur in approximately 10% of patients and are most commonly dose related.</p>
+                                    </div>
+                                    <div>
+                                        <p>The assessment of the side effects is based on the following frequencies:</p>
+                                        <ul>
+                                            <li>Very common (≥ 1/10)</li>
+                                            <li>Common (≥ 1/100 to &lt; 1/10) </li>
+                                            <li>Uncommon (≥ 1/1,000 to &lt; 1/100)</li>
+                                            <li>Rare (≥ 1/10,000 to &lt; 1/1,000) </li>
+                                            <li>Very rare (&lt; 1/10,000)</li>
+                                            <li>Not known (cannot be estimated from the available data)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <!-- TODO Complete the table -->
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>&#xa0;</td>
+                                                    <td>Very common (≥ 1/10)</td>
+                                                    <td>Common (≥ 1/100 to &lt; 1/10) </td>
+                                                    <td>Uncommon (≥ 1/1,000 to &lt; 1/100)</td>
+                                                    <td>Rare (≥ 1/10,000 to &lt; 1/1,000) </td>
+                                                    <td>Not known (cannot be estimated from the available data)</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Reporting of suspected adverse reactions"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029818"/>
+                                        <display value="Reporting of suspected adverse reactions"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Reporting of suspected adverse reactions</h4>
+                                        <p>Reporting suspected adverse reactions after authorisation of the medicinal product is important. It allows continued monitoring of the benefit/risk balance of the medicinal product. Healthcare professionals are asked to report any suspected adverse reactions via the national reporting system listed in [To be completed nationally].</p>
+                                    </div>
+                                </text>
+                            </section>
+                        </section>
+                        <section>
+                            <title value="4.9 Overdose"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029819"/>
+                                    <display value="4.9 Overdose"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>4.9 Overdose</h3>
+                                    <div>
+                                        <h4>Toxicity</h4>
+                                        <p>7.5 g administered to an adult caused lethal intoxication. 100 mg administered to a 5-year-old, after gastric lavage, caused no symptoms. 450 mg given to a 12-year-old and 1.4 g given to an adult caused moderate intoxication, 7.5 g given to an adult caused very serious intoxication.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Symptoms</h4>
+                                        <p>Cardiovascular symptoms are most important, but in certain cases, especially in children, CNS-symptoms and respiratory depression can dominate. Bradycardia, AV-block I-III, QT-prolongation (isolated cases), asystole, hypotension, poor peripheral perfusion, cardiac decompensation, cardiogenic shock. Respiratory depression, apnoea. The first signs of overdose can be observed 20 minutes to 2 hours after ingestion.</p>
+                                    </div>
+                                    <div>
+                                        <h4>Treatment</h4>
+                                        <p>The patient must be treated in an institution where the required support treatment, observation and monitoring can be carried out. If justified, gastric lavage and/or charcoal may be given.<br/>Atropine an adrenoceptor-stimulating drug or pacemaker for the treatment of bradycardia and conduction disorders. Hypotension, acute heart failure and shock should be treated with appropriate volume expansion, injection of glucagon (if necessary followed by an intravenous infusion of glucagon), intravenous administration of adrenoceptor-stimulating drugs such as dobutamine, with the addition of α1-receptor agonists for vasodilation.<br/>Bronchospasm can usually be treated with bronchodilators.</p>
+                                    </div>
+                                </div>
+                            </text>
+                        </section>
+                    </section>
+                    <section>
+                        <title value="5. PHARMACOLOGICAL PROPERTIES"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029821"/>
+                                <display value="5. PHARMACOLOGICAL PROPERTIES"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>5. PHARMACOLOGICAL PROPERTIES</h2>
+                            </div>
+                        </text>
+                        <section>
+                            <title value="5.1 Pharmacodynamic properties"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029822"/>
+                                    <display value="5.1 Pharmacodynamic properties"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>5.1 Pharmacodynamic properties</h3>
+                                    <p>PPharmacotherapeutic group: Beta-receptor blockers, selective<br/>ATC code: C07AB02</p>
+                                    <p>Metoprolol is a beta 1-selective receptor blocker, which means that metoprolol affects beta 1-receptors in the heart at lower doses than are required to affect beta 2-receptors in peripheral vessels and bronchi. The selectivity of Medikament is dose-dependent, but since the peak plasma concentration for this preparation is significantly lower than for the same dose of normal tablets, a higher degree of beta 1-selectivity is achieved with the depot-preparation.</p>
+                                    <p>Metoprolol has no beta-stimulating effects and has mild membrane stimulating effects. Beta-receptor blockers have negative inotropic and chronotropic effects.</p>
+                                    <p>In the presence of hypertension, Medikament causes a significant reduction in blood pressure for more than 24 hours in both supine and standing positions as well as during physical exertion. Initially, treatment with metoprolol causes an elevation in peripheral vascular resistance. With long term treatment, however, the reduction in blood pressure achieved can be attributed to a reduced peripheral vascular resistance and an unchanged cardiac minute volume. Metoprolol reduces the risk of cardiovascular death in individuals with moderate/severe hypertension. Disturbances in electrolyte balance do not occur.</p>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Clinical pharmacodynamic data"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000044333"/>
+                                        <display value="Level=H4 SmPC custom subsection"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Paediatric population</h4>
+                                        <p>In 144 paediatric patients (6 to 16 years of age) with primarily essential hypertension, metoprolol has been shown in a 4-week study to reduce systolic blood pressure with 5.2 mmHg with 0.2 mg/kg (p=0.145), 7.7 mmHg for 1.0 mg/kg (p=0.027) and 6.3 mmHg for 2.0 mg/kg doses (p=0.049) with a maximum of 200 mg/day compared to 1.9 mmHg on placebo. For diastolic blood pressure, this reduction was 3.1 (p=0.655), 4.9 (p=0.280), 7.5 (p=0.017) and 2.1 mmHg, respectively. No apparent differences in blood pressure reduction were observed based on age, Tanner stage, or race.</p>
+                                    </div>
+                                </text>
+                            </section>
+                        </section>
+                        <section>
+                            <title value="5.2 Pharmacokinetic properties"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029827"/>
+                                    <display value="5.2 Pharmacokinetic properties"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>5.2 Pharmacokinetic properties</h3>
+                                    <p>In Medikament, metoprolol succinate takes the form of microencapsulated granules, each of which constitutes a prolonged release unit. Each individual granule is coated with a polymer film, which governs release of the drug. The tablets dissolve rapidly in contact with liquid, whereby the coated granules are distributed over a large area of the gastrointestinal tract. Release is independent on pH of the surrounding liquid and occurs at a relatively constant rate over approximately 20 hours. This form of preparation results in even plasma concentrations and duration of action over 24 hours.</p>
+                                    <p>Absorption following oral administration is complete and the substance is absorbed throughout the entire gastrointestinal tract, including the colon. The bioavailability of Medikament is 30-40%. Metoprolol is chiefly metabolised in the liver by CYP2D6.</p>
+                                    <p>The pharmacokinetic profile of metoprolol in paediatric hypertensive patients aged 6-17 years is similar to the pharmacokinetics described previously in adults. Metoprolol apparent oral clearance (CL/F) increased linearly with body weight.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="5.3 Preclinical safety data"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029834"/>
+                                    <display value="5.3 Preclinical safety data"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>5.3 Preclinical safety data</h3>
+                                    <p>Non-clinical data revealed no special hazard for humans based on conventional studies of genotoxicity and carcinogenic potential.</p>
+                                </div>
+                            </text>
+                        </section>
+                    </section>
+                    <section>
+                        <title value="6. PHARMACEUTICAL PARTICULARS"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029836"/>
+                                <display value="6. PHARMACEUTICAL PARTICULARS"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>6. PHARMACEUTICAL PARTICULARS</h2>
+                            </div>
+                        </text>
+                        <section>
+                            <title value="6.1 List of excipients"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029837"/>
+                                    <display value="6.1 List of excipients"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.1 List of excipients</h3>
+                                    <div>
+                                        <h4>Tablet core:</h4>
+                                        <ul>
+                                            <li>Sugar spheres (containing sucrose and maize starch)</li>
+                                            <li>Macrogol</li>
+                                            <li>Microcrystalline cellulose</li>
+                                            <li>Magnesium stearate</li>
+                                            <li>Silica, colloidal anhydrous.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Tablet coating:</h4>
+                                        <ul>
+                                            <li>Hypromellose</li>
+                                            <li>Titanium dioxide (E 171) (25 mg tablet)</li>
+                                            <li>Iron oxide (E 172) (100 mg tablet).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="6.2 Incompatibilities"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029838"/>
+                                    <display value="6.2 Incompatibilities"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.2 Incompatibilities</h3>
+                                    <p>Not applicable.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="6.3 Shelf life"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029839"/>
+                                    <display value="6.3 Shelf life"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.3 Shelf life</h3>
+                                    <p>2 years.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="6.4 Special precautions for storage"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029840"/>
+                                    <display value="6.4 Special precautions for storage"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.4 Special precautions for storage</h3>
+                                    <p>Do not store above 25 °C.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="6.5 Nature and contents of container"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029841"/>
+                                    <display value="6.5 Nature and contents of container [and special equipment for use, administration or implantation]"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.5 Nature and contents of container</h3>
+                                    <p>Blisterpack (Al/Al)</p>
+                                    <div>
+                                        <p class="title-i">Medikament 25 mg prolonged-release tablet</p>
+                                        <p>14, 28, 30, 50x1, 100 prolonged-release tablets.</p>
+                                    </div>
+                                    <div>
+                                        <p class="title-i">Medikament 100 mg prolonged-release tablet</p>
+                                        <p>28, 30, 50x1, 100 prolonged-release tablets.</p>
+                                    </div>
+                                    <p>Not all pack sizes may be marketed.</p>
+                                </div>
+                            </text>
+                        </section>
+                        <section>
+                            <title value="6.6 Special precautions for disposal"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029842"/>
+                                    <display value="6.6 Special precautions for disposal [and other handling]"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <h3>6.6 Special precautions for disposal</h3>
+                                    <p>No special requirements.</p>
+                                </div>
+                            </text>
+                        </section>
+                    </section>
+                    <section>
+                        <title value="7. MARKETING AUTHORISATION HOLDER"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029844"/>
+                                <display value="7. MARKETING AUTHORISATION HOLDER"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>7. MARKETING AUTHORISATION HOLDER</h2>
+                                <p>LV Pharma<br/>Dag Hammarskjölds väg 42<br/>752 37 Uppsala</p>
+                            </div>
+                        </text>
+                    </section>
+                    <section>
+                        <title value="8. MARKETING AUTHORISATION NUMBER(S)"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029845"/>
+                                <display value="8. MARKETING AUTHORISATION NUMBER(S)"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>8. MARKETING AUTHORISATION NUMBER(S)</h2>
+                                <ul style="list-style-type: none;">
+                                    <li>123456789</li>
+                                </ul>
+                            </div>
+                        </text>
+                    </section>
+                    <section>
+                        <title value="9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029846"/>
+                                <display value="9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>9. DATE OF FIRST AUTHORISATION/RENEWAL OF THE AUTHORISATION</h2>
+                                <p>2018-06-04</p>
+                            </div>
+                        </text>
+                    </section>
+                    <section>
+                        <title value="10. DATE OF REVISION OF THE TEXT"/>
+                        <code>
+                            <coding>
+                                <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                <code value="200000029847"/>
+                                <display value="10. DATE OF REVISION OF THE TEXT"/>
+                            </coding>
+                        </code>
+                        <text>
+                            <status value="additional"/>
+                            <div xmlns="http://www.w3.org/1999/xhtml">
+                                <h2>10. DATE OF REVISION OF THE TEXT</h2>
+                                <p>2026-10-23</p>
+                            </div>
+                        </text>
+                    </section>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+</Bundle>
