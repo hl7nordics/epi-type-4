@@ -1,0 +1,249 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <type value="document"/>
+  <entry>
+    <fullUrl value="urn:uuid:9e6f5ab6-cecb-4403-ae90-c02f74ace586"/>
+    <resource>
+      <Composition>
+        <!-- The textLink extensions are on the Composition -->
+        <!-- https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-textLink.html -->
+
+        <!-- Link to the product -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="fungisynth-product-01"/>
+          </extension>
+          <extension url="htmlid">
+            <valueString value="fungisynth-product-02"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="MedicinalProductDefinition/fungisynth-product"/>
+          </extension>
+        </extension>
+
+        <!-- Link to additional monitoring status -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="product-additional-monitoring"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="MedicinalProductDefinition/fungisynth-product"/>
+          </extension>
+          <extension url="selector">
+            <valueString value="additionalMonitoring"/>
+          </extension>
+        </extension>
+
+        <!-- Link to the product name -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="fungisynth-product-name-01"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="MedicinalProductDefinition/fungisynth-product"/>
+          </extension>
+          <extension url="selector">
+            <valueString value="name.productName"/>
+          </extension>
+        </extension>
+
+        <!-- Link to the contraindication due to allergy -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="synthazole-allergy"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="ClinicalUseDefinition/cud-contr-synthazole-allergy"/>
+          </extension>
+        </extension>
+
+        <!-- Link to the population under 2 years of age -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="grp-under-2-yr"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="Group/under-2-yr"/>
+          </extension>
+        </extension>
+
+        <!-- Link to the contraindication for patients under 2 years of age -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="contraind-under-2-yr"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="ClinicalUseDefinition/cud-contr-under-2-yr"/>
+          </extension>
+        </extension>
+
+        <!-- Link to the substance -->
+        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+          <extension url="htmlid">
+            <valueString value="subst-synthazole-01"/>
+          </extension>
+          <extension url="data">
+            <valueUri value="SubstanceDefinition/synthazole"/>
+          </extension>
+        </extension>
+
+        <status value="preliminary"/>
+        <type>
+          <text value="SmPC"/>
+        </type>
+        <date value="2026-11-11"/>
+        <author>
+          <display value="Author"/>
+        </author>
+        <title value="SmPC Example"/>
+
+        <section>
+          <title value="SmPC"/>
+          <text>
+            <status value="additional"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              <p>
+                <span id="product-additional-monitoring">▼ This medicinal product is subject to additional monitoring.</span>
+              </p>
+            </div>
+          </text>
+          <section>
+            <title value="1. Name of the Medicinal pro"/>
+            <text>
+              <status value="additional"/>
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <!-- The paragraph maps to the whole product name in productName -->
+                <!-- Spans inside the paragraph could map to specific namePart elements -->
+                <p id="fungisynth-product-name-01">Fungisynth 500 mg tablets.</p>
+              </div>
+            </text>
+          </section>
+          <section>
+            <title value="Section 4"/>
+            <section>
+              <title value="Contraindications"/>
+              <text>
+                <status value="additional"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                  <p id="synthazole-allergy">
+                    Do not take
+                    <span id="fungisynth-product-01">Fungisynth</span>
+                    if you are allergic to
+                    <span id="subst-synthazole-01">synthazole</span>.
+                  </p>
+                  <p id="contraind-under-2-yr">
+                    Do not give
+                    <span id="fungisynth-product-02">Fungisynth</span>
+                    to
+                    <span id="grp-under-2-yr">children under 2 years of age</span>.
+                  </p>
+                </div>
+              </text>
+              <entry>
+                <reference value="MedicinalProductDefinition/fungisynth-product"/>
+              </entry>
+              <entry>
+                <reference value="ClinicalUseDefinition/cud-contr-synthazole-allergy"/>
+              </entry>
+              <entry>
+                <reference value="ClinicalUseDefinition/cud-contr-under-2-yr"/>
+              </entry>
+              <entry>
+                <reference value="Group/under-2-yr"/>
+              </entry>
+              <entry>
+                <reference value="SubstanceDefinition/synthazole"/>
+              </entry>
+            </section>
+          </section>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="MedicinalProductDefinition/fungisynth-product"/>
+    <resource>
+      <MedicinalProductDefinition>
+        <id value="fungisynth-product"/>
+        <additionalMonitoringIndicator>
+          <coding>
+            <system value="http://hl7.nordics/epi/additionalMonitoringIndicator"/>
+            <code value="true"/>
+          </coding>
+        </additionalMonitoringIndicator>
+        <name>
+          <productName value="Fungisynth"/>
+        </name>
+      </MedicinalProductDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="ClinicalUseDefinition/cud-contr-synthazole-allergy"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-contr-synthazole-allergy"/>
+        <type value="contraindication"/>
+        <contraindication>
+          <!-- Code for the contraindication -->
+        </contraindication>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="ClinicalUseDefinition/cud-contr-under-2-yr"/>
+    <resource>
+      <ClinicalUseDefinition>
+        <id value="cud-contr-under-2-yr"/>
+        <type value="contraindication"/>
+        <contraindication>
+          <diseaseSymptomProcedure>
+            <concept>
+              <text value="Contraindicated for patients under 2 years of age"/>
+            </concept>
+          </diseaseSymptomProcedure>
+        </contraindication>
+        <population>
+          <reference value="Group/under-2-yr"/>
+        </population>
+      </ClinicalUseDefinition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Group/under-2-yr"/>
+    <resource>
+      <Group>
+        <id value="under-2-yr"/>
+        <type value="person"/>
+        <membership value="definitional"/>
+        <characteristic>
+          <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="424144002"/>
+              <display value="Current chronological age"/>
+            </coding>
+          </code>
+          <valueRange>
+            <low>
+              <value value="0"/>
+              <unit value="a"/>
+            </low>
+            <high>
+              <value value="2"/>
+              <unit value="a"/>
+            </high>
+          </valueRange>
+          <exclude value="false"/>
+        </characteristic>
+      </Group>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="SubstanceDefinition/synthazole"/>
+    <resource>
+      <SubstanceDefinition>
+        <id value="subst-synthazole"/>
+        <!-- Code for the substance -->
+      </SubstanceDefinition>
+    </resource>
+  </entry>
+</Bundle>
