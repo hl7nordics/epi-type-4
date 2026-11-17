@@ -133,6 +133,22 @@
                         </text>
                     </section>
                     <section>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                            <extension url="htmlid">
+                                <valueString value="CUD-Hypertension-ind-dose"/>
+                            </extension>
+                            <extension url="data">
+                                <valueUri value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+                            </extension>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                            <extension url="htmlid">
+                                <valueString value="CUD-Hypertension-dose"/>
+                            </extension>
+                            <extension url="data">
+                                <valueUri value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9#848d966d-8de9-44e5-9159-42bf39823ddf"/>
+                            </extension>
+                        </extension>
                         <title value="4. CLINICAL PARTICULARS"/>
                         <code>
                             <coding>
@@ -166,14 +182,6 @@
                                 </coding>
                             </code>
                             <text>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
-                                    <extension url="htmlid">
-                                        <valueString value="CUD-Hypertension-ind-dose"/>
-                                    </extension>
-                                    <extension url="data">
-                                        <valueUri value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
-                                    </extension>
-                                </extension>
                                 <status value="additional"/>
                                 <div xmlns="http://www.w3.org/1999/xhtml">
                                     <h3>4.1 Therapeutic indications</h3>
@@ -192,6 +200,68 @@
                                 <reference value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
                             </entry>
                         </section>
+                        <section>
+                            <title value="4.2 Posology and method of administration"/>
+                            <code>
+                                <coding>
+                                    <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                    <code value="200000029800"/>
+                                    <display value="4.2 Posology and method of administration"/>
+                                </coding>
+                            </code>
+                            <text>
+                                <status value="additional"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">                                    
+                                    <h3>4.2 Posology and method of administration</h3>
+                                </div>
+                            </text>
+                            <section>
+                                <title value="Posology"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                        <code value="200000029801"/>
+                                        <display value="Posology"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="additional"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <h4>Posology</h4>
+                                        <p>The dosage should be tailored to the individual and adjusted so that bradycardia is avoided.</p>
+                                    </div>
+                                </text>
+                                <section>
+                                    <title value="Adults"/>
+                                    <code>
+                                        <coding>
+                                            <system value="http://ema.europa.eu/fhir/CodeSystem/200000029659"/>
+                                            <code value="200000044347"/>
+                                            <display value="Level=H5 SmPC custom subsection"/>
+                                        </coding>
+                                    </code>
+                                    <text>
+                                        <status value="additional"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <h5>Adults</h5>
+                                            <div>
+                                                <h6>Hypertension</h6>
+                                                <p>
+                                                    <span id="CUD-Hypertension-dose">50-100 mg once daily.</span>
+                                                    <span>If the desired effect is not achieved with 100 mg, the dose may be combined with other antihypertensive agents,
+                                                        primarily diuretics and dihydropyridine type calcium antagonists, or the dose increased.</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </text>
+                                    <entry>
+                                        <reference value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+                                    </entry>
+                                </section>
+                            </section>
+                        </section>
+                        <!-- TODO Duplicate 4.2 below -->
+                        <!--
                         <section>
                             <title value="4.2 Posology and method of administration"/>
                             <code>
@@ -356,6 +426,7 @@
                                 </text>
                             </section>
                         </section>
+                        -->
                         <section>
                             <title value="4.3 Contraindications"/>
                             <code>
@@ -1131,7 +1202,7 @@
         <resource>
             <ClinicalUseDefinition>
                 <id value="6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
-                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosage">
+                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosage" id="848d966d-8de9-44e5-9159-42bf39823ddf">
                     <extension url="dosage">
                         <valueDosage>
                             <text value="50-100 mg once daily"/>
