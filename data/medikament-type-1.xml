@@ -597,45 +597,163 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <!-- TODO Complete the table -->
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <td>&#xa0;</td>
-                                                    <td>Very common (≥ 1/10)</td>
-                                                    <td>Common (≥ 1/100 to &lt; 1/10) </td>
-                                                    <td>Uncommon (≥ 1/1,000 to &lt; 1/100)</td>
-                                                    <td>Rare (≥ 1/10,000 to &lt; 1/1,000) </td>
-                                                    <td>Not known (cannot be estimated from the available data)</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th>System Organ Class</th>
+                                          <th>Very common (&ge;1/10)</th>
+                                          <th>Common (&ge;1/100 to &lt;1/10)</th>
+                                          <th>Uncommon (&ge;1/1,000 to &lt;1/100)</th>
+                                          <th>Rare (&ge;1/10,000 to &lt;1/1,000)</th>
+                                          <th>Not known</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Blood and lymphatic system disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Thrombocytopenia</td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Metabolism and nutrition disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Weight gain</td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Psychiatric disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Sleep disturbances</td>
+                                          <td>Confusion, anxiety</td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Nervous system disorders</td>
+                                          <td>Tiredness</td>
+                                          <td>Headache</td>
+                                          <td>Paresthesia</td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Eye disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Dry eyes</td>
+                                          <td>Conjunctivitis</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Ear and labyrinth disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Tinnitus</td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Cardiac disorders</td>
+                                          <td></td>
+                                          <td>Bradycardia, palpitations</td>
+                                          <td>Chest pain, transient worsening of heart failure</td>
+                                          <td>Cardiac arrhythmias</td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Vascular disorders</td>
+                                          <td></td>
+                                          <td>Peripherally cold extremities</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Respiratory, thoracic and mediastinal disorders</td>
+                                          <td></td>
+                                          <td>Dyspnoea upon exertion</td>
+                                          <td>Bronchospasm in patients with bronchial asthma</td>
+                                          <td></td>
+                                          <td>Rhinitis</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Gastrointestinal disorders</td>
+                                          <td></td>
+                                          <td>Abdominal pain</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Dry mouth</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Hepatobiliary disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Increase in transaminase</td>
+                                          <td>Hepatitis</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Skin and subcutaneous tissue disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Hypersensitivity reactions affecting the skin</td>
+                                          <td>Photosensitivity</td>
+                                          <td>Dermatitis, acneiform</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Musculoskeletal and connective tissue disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Muscle cramps</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Reproductive system and breast disorders</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>General disorders and administration site conditions</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>Oedema</td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                          <td>Investigations</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>                     
                                     </div>
                                 </div>
                             </text>
