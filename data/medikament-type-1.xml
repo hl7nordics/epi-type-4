@@ -147,6 +147,15 @@
                                 <h2>4. CLINICAL PARTICULARS</h2>
                             </div>
                         </text>
+                        <!--
+                                        <ul>
+                                            <li>Stable, chronic symptomatic heart failure with reduced systolic left ventricular function.</li>
+                                            <li>Hypertension</li>
+                                            <li>Angina pectoris</li>
+                                            <li>Palpitations in the absence of organic heart disease.</li>
+                                            <li>Prophylactic treatment of migraine.</li>
+                                        </ul>
+                        -->
                         <section>
                             <title value="4.1 Therapeutic indications"/>
                             <code>
@@ -157,25 +166,31 @@
                                 </coding>
                             </code>
                             <text>
+                                <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+                                    <extension url="htmlid">
+                                        <valueString value="CUD-Hypertension-ind-dose"/>
+                                    </extension>
+                                    <extension url="data">
+                                        <valueUri value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+                                    </extension>
+                                </extension>
                                 <status value="additional"/>
                                 <div xmlns="http://www.w3.org/1999/xhtml">
                                     <h3>4.1 Therapeutic indications</h3>
                                     <div>
                                         <p class="title-u">Adults</p>
                                         <ul>
-                                            <li>Stable, chronic symptomatic heart failure with reduced systolic left ventricular function.</li>
-                                            <li>Hypertension</li>
-                                            <li>Angina pectoris</li>
-                                            <li>Palpitations in the absence of organic heart disease.</li>
-                                            <li>Prophylactic treatment of migraine.</li>
+                                            <li id="CUD-Hypertension-ind-dose">Hypertension</li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <p class="title-u">Children and adolescents 6-18 years of age</p>
-                                        <p>Treatment of hypertension.</p>
+                                        <p class="title-u">Children</p>
                                     </div>
                                 </div>
                             </text>
+                            <entry>
+                                <reference value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+                            </entry>
                         </section>
                         <section>
                             <title value="4.2 Posology and method of administration"/>
@@ -601,10 +616,10 @@
                                       <thead>
                                         <tr>
                                           <th>System Organ Class</th>
-                                          <th>Very common (&ge;1/10)</th>
-                                          <th>Common (&ge;1/100 to &lt;1/10)</th>
-                                          <th>Uncommon (&ge;1/1,000 to &lt;1/100)</th>
-                                          <th>Rare (&ge;1/10,000 to &lt;1/1,000)</th>
+                                            <th>Very common (≥ 1/10)</th>
+                                            <th>Common (≥ 1/100 to &lt;1/10)</th>
+                                            <th>Uncommon (≥ 1/1,000 to &lt;1/100)</th>
+                                            <th>Rare (≥ 1/10,000 to &lt;1/1,000)</th>
                                           <th>Not known</th>
                                         </tr>
                                       </thead>
@@ -1109,6 +1124,87 @@
                     </section>
                 </section>
             </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="6029d3ca-1c51-48f4-9a67-6bb3427df6d9"/>
+                <extension url="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ext-epi-dosage">
+                    <extension url="dosage">
+                        <valueDosage>
+                            <text value="50-100 mg once daily"/>
+                            <timing>
+                                <repeat>
+                                    <frequency value="1"/>
+                                    <period value="1"/>
+                                    <periodUnit value="d"/>
+                                </repeat>
+                            </timing>
+                            <doseAndRate>
+                                <doseRange>
+                                    <low>
+                                        <value value="50"/>
+                                        <system value="http://unitsofmeasure.org"/>
+                                        <code value="mg"/>
+                                    </low>
+                                    <high>
+                                        <value value="100"/>
+                                        <system value="http://unitsofmeasure.org"/>
+                                        <code value="mg"/>
+                                    </high>
+                                </doseRange>
+                            </doseAndRate>
+                        </valueDosage>
+                    </extension>
+                </extension>
+                <type value="indication"/>
+                <indication>
+                    <diseaseSymptomProcedure>
+                        <concept>
+                            <coding>
+                                <system value="http://meddra.org"/>
+                                <code value="10020772"/>
+                                <display value="Hypertension"/>
+                            </coding>
+                            <text value="Hypertension"/>
+                        </concept>
+                    </diseaseSymptomProcedure>
+                </indication>
+                <population>
+                    <reference value="urn:uuid:f0f6f24a-b3aa-41cf-b9dc-a1b9270f52f8"/>
+                </population>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:f0f6f24a-b3aa-41cf-b9dc-a1b9270f52f8"/>
+        <resource>
+            <Group>
+                <id value="f0f6f24a-b3aa-41cf-b9dc-a1b9270f52f8"/>
+                <type value="person"/>
+                <membership value="definitional"/>
+                <name value="Adults"/>
+                <characteristic>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="424144002"/>
+                            <display value="Current chronological age"/>
+                        </coding>
+                    </code>
+                    <valueRange>
+                        <low>
+                            <value value="18"/>
+                            <unit value="years"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="a"/>
+                        </low>
+                    </valueRange>
+                    <exclude value="false"/>
+                </characteristic>
+            </Group>
         </resource>
     </entry>
 </Bundle>
